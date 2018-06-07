@@ -1,0 +1,43 @@
+.container {
+    padding: 20% 5% 0 5%;
+}
+.input-block{
+    display: flex;
+    /*width: 100%;*/
+    padding: 30px 5px 10px 5px;
+    flex-wrap: wrap;
+}
+
+.input-block > mat-form-field {
+    width: 100%;
+}
+
+.button-block{
+    display: flex;
+    padding: 30px 5px 10px 5px;
+    flex-wrap: wrap;
+}
+
+.button-block > button{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+.header-text{
+    text-align: center;
+    font-size: 40px;
+    font-family: "Droid Sans";
+    color: #fff;
+}
+
+.example-full-width{
+    margin-bottom: 15px;
+}
+
+.radio-group{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    width: 100%;
+}

@@ -1,19 +1,24 @@
 import {RouterModule, Routes} from '@angular/router';
 import {NgModule} from '@angular/core';
 import {FirstViewComponent} from './first-view/first-view.component';
-import {RegistrationViewComponent} from './registration-view/registration-view.component';
+import {LoginViewComponent} from './login-view/login-view.component';
+import {RegisterViewComponent} from './register-view/register-view.component';
+import {AdditionalDataViewComponent} from './additional-data-view/additional-data-view.component';
+import {MainPageViewComponent} from './main-page-view/main-page-view.component';
+import {PaymentComponent} from './payment/payment.component';
 
 const appRoutes: Routes = [
     {path: 'first-view', component: FirstViewComponent},
-    {path: 'register', component: RegistrationViewComponent}
+    {path: 'login', component: LoginViewComponent},
+    {path: 'register', component: RegisterViewComponent},
+    {path: 'additional', component: AdditionalDataViewComponent},
+    {path: 'main', component: MainPageViewComponent},
+    {path: 'payment', component: PaymentComponent}
 ];
 @NgModule({
     imports: [
         RouterModule.forRoot(
-            appRoutes,
-            { enableTracing: true } // <-- debugging purposes only
-        )
-        // other imports here
+            appRoutes)
     ],
     exports: [RouterModule]
 })

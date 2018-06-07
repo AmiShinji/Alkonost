@@ -1,0 +1,16 @@
+<form [formGroup]="loginForm" class="container">
+    <div class="header-text">Вход</div>
+    <div class="input-block">
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="Логин" formControlName="login" color="accent">
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="Пароль" formControlName="password" type="password">
+        </mat-form-field>
+    </div>
+    <div class="button-block">
+        <button mat-raised-button (click)="doLogin()" color="warn">Войти</button>
+        <button mat-raised-button color="accent">Войти через Вконтакте</button>
+        <button mat-raised-button color="primary" (click)="doRegister()">Зарегистрироваться</button>
+    </div>
+</form>

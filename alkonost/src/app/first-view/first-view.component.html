@@ -1,13 +1,11 @@
 <div class="container">
-    <div class="button-container">
-        <button mat-button color="primary">{{button1}}</button>
-        <button mat-button color="primary" (click)="changeButtonName() ">{{button2}}</button>
-    </div>
+    <img class="main-bubble" src="../../assets/images/bubble.png"/>
+    <img class="main-img" src="../../assets/images/alkonost.png"/>
+    <div class="progress-bar-text">Loading...</div>
+    <mat-progress-bar
+            class="progress-bar"
+            mode="determinate"
+            [value]="value">
+    </mat-progress-bar>
 
 </div>
-<div *ngFor="let person of personList">
-    Имя: {{person.name}} <br>
-    Возраст: {{person.age}}
-</div>
-
-<div class="alkonost"></div>

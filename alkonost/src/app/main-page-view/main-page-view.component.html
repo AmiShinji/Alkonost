@@ -1,0 +1,39 @@
+<mat-toolbar class="toolbar">
+    <mat-icon class="menu" (click)="toggleSidenav()">menu</mat-icon>
+    <span class="app-title">Алконост</span>
+    <mat-icon class="points" [matMenuTriggerFor]="menu">more_vert</mat-icon>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item>Настройки</button>
+        <button mat-menu-item routerLink="/login">Выйти</button>
+    </mat-menu>
+</mat-toolbar>
+<mat-tab-group>
+    <mat-tab label="7 июня">
+        <mat-icon class="sun">wb_sunny</mat-icon>
+        <div class="temperature">23°С</div>
+        <div class="wind">4м/c, 70%</div>
+        <mat-list>
+            <mat-list-item class="item">Возьмите с собой зонт, по приметам должен быть дождь</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item class="item">Оденьте ветровку. Ветер несильный, но холодный</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item class="item">На улице ярко. Можно надеть солнечные очки (пока не пошёл дождь)))</mat-list-item>
+            <mat-divider></mat-divider>
+        </mat-list>
+    </mat-tab>
+    <mat-tab label="8 июня">
+        <mat-icon class="sun">wb_cloudy</mat-icon>
+        <div class="temperature">26°С</div>
+        <div class="wind">2м/c, 80%</div>
+        <mat-list>
+            <mat-list-item class="item">На улице очень душно, лучше идти в хлопковой одежде</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item class="item">Судя по приметам вечером будет гроза с дождем. Будьте уверены, что взяли зонт</mat-list-item>
+            <mat-divider></mat-divider>
+        </mat-list>
+    </mat-tab>
+
+    <mat-tab label="9 июня">Content 2</mat-tab>
+    <mat-tab label="10 июня">Content 2</mat-tab>
+    <mat-tab label="11 июня">Content 2</mat-tab>
+</mat-tab-group>

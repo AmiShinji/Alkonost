@@ -1,0 +1,17 @@
+<form [formGroup]="registerForm" class="container">
+    <mat-icon class="icon-close" routerLink="/login">close</mat-icon>
+    <div class="header-text">Регистрация</div>
+    <div class="input-block">
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="E-mail" formControlName="email" color="accent">
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="Пароль" formControlName="password" type="password">
+        </mat-form-field>
+    </div>
+    <div class="button-block">
+        <button mat-raised-button color="primary" (click)="doRegister()">Зарегистрироваться</button>
+        <button mat-raised-button color="accent">Войти через Вконтакте</button>
+    </div>
+
+</form>

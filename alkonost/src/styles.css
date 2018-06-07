@@ -1,1 +1,109 @@
 @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";/* You can add global styles to this file, and also import other style files */
+
+
+first-view{
+    display: block;
+    width: 100%;
+}
+
+registration-view {
+    display: block;
+    width: 100%;
+}
+
+router-outlet{
+    display: block;
+    background-image: url('assets/images/background.png');
+}
+
+mat-sidenav-content{
+    background-image: url('assets/images/background.png');
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url('assets/images/background.png');
+
+}
+
+.mat-raised-button.mat-primary {
+    background-color: #ffffff;
+    color: #777;
+}
+
+.mat-button{
+    color: #fff;
+}
+
+.mat-progress-bar-fill::after{
+    background-color: #1ab1e5;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-label {
+    color: rgba(255,255,255, .6);
+
+}
+
+.mat-input-element{
+    color: #fff !important;
+    caret-color: #fff;
+}
+
+.mat-form-field-invalid  .mat-input-element{
+    color: orangered!important;
+    caret-color: orangered;
+}
+
+.mat-form-field-invalid .mat-form-field-label {
+    color: orangered!important;
+
+}
+
+.mat-form-field-invalid .mat-form-field-underline {
+    background-color: orangered!important;
+
+}
+
+
+.mat-form-field-appearance-legacy .mat-form-field-underline{
+    background-color: #aaa !important;
+}
+
+.mat-form-field-invalid  .mat-form-field-ripple{
+    background-color: orangered!important;
+}
+
+.mat-focused .mat-form-field-ripple{
+    background-color: #fff!important;
+}
+
+
+.mat-focused .mat-form-field-label{
+    color: #fff!important;
+}
+
+.mat-raised-button.mat-accent{
+    background-color: #54429a;
+    color: #eee;
+}
+
+.mat-ink-bar{
+    background-color: #fff !important;
+}
+
+.mat-tab-label{
+    color: #fff !important;
+
+}
+
+.mat-tab-header-pagination-chevron{
+    border-color: #ffffff !important;
+}
+
+.icon-close{
+    color: #fff;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
